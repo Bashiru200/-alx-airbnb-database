@@ -1,0 +1,1 @@
+Created table for User, Property, Role, Message, Booking and Review for the database system
