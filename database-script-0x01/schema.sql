@@ -54,6 +54,7 @@ CREATE TABLE Review (
     FOREIGN KEY (user_id) REFERENCES User(user_id)
 );
 
+
 CREATE TABLE Message (
     message_id INT PRIMARY KEY AUTO_INCREMENT,
     sender_id INT NOT NULL,
@@ -64,6 +65,7 @@ CREATE TABLE Message (
     FOREIGN KEY (receiver_id) REFERENCES User(user_id)
 );
 
+-- Create a new Role table to manage user roles
 CREATE TABLE Role (
     role_id INT PRIMARY KEY AUTO_INCREMENT,
     role_name ENUM('guest', 'host', 'admin') NOT NULL UNIQUE
