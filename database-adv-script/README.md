@@ -1,0 +1,1 @@
+applying the Join command: Inner, Left and Full Out JOIn
