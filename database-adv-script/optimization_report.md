@@ -1,0 +1,1 @@
+Retrived all the bookings along with the user detials, property details, and pyament details and save it on performance.sql
