@@ -4,4 +4,4 @@ Create INDEX indx_booking_total_price on Booking(total_price);
 
 EXPLAIN SELECT * FROM User WHERE email = 'john@example.com';
 
-ANALYZE FORMAT=JSON SELECT * FROM User WHERE email = 'john@example.com';
+EXPLAIN ANALYZE SELECT * FROM User WHERE email = 'john@example.com';
