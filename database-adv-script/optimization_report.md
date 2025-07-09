@@ -1,1 +1,14 @@
-Retrived all the bookings along with the user detials, property details, and pyament details and save it on performance.sql
+Retrived all the bookings along with the user detials, property details, and payment details and save it on performance.sql
+
+
+EXPLAIN Before                                                                                |
++-------------------------------------------------------------------------------------------+
+| -> Table scan on Booking  (cost=0.45 rows=2) (actual time=0.0379..0.0483 rows=3 loops=1) |
++-------------------------------------------------------------------------------------------+
+
++-------------------------------------------------------------------------------------------+
+| EXPLAIN  After                                                                                 |
++-------------------------------------------------------------------------------------------+
+| -> Table scan on Booking  (cost=0.45 rows=2) (actual time=0.0305..0.0376 rows=3 loops=1)
+ |
++-------------------------------------------------------------------------------------------+
