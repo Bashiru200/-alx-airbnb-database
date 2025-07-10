@@ -6,6 +6,11 @@ GROUP BY User.user_id, User.first_name, User.last_name;
 
 -- a window function (ROW_NUMBER, RANK) to rank properties based on the total number of bookings they have received.
 
-SELECT Property.property_id, Property.name, Property.price_per_night, 
-       RANK() OVER (ORDER BY Property.price_per_night DESC) AS rank
+SELECT Property.property_id, 
+        Property.name, 
+        Property.price_per_night, 
+       RANK() OVER (
+        ORDER BY Property.price_per_night DESC
+        ) AS ranks
 FROM Property;
+
